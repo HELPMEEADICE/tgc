@@ -1,0 +1,22 @@
+decisions_BGD_cabinet = {
+    BGD_change_cabinet = {
+		icon = generic_industry
+		name = BGD_decisions_BGD_cabinet
+		fire_only_once = no
+		days_re_enable = 1
+		cost = 0
+		allowed = {
+			tag = BGD
+		}
+		visible = {
+		}
+		available = {
+			tag = BGD
+		}
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			}
+		}
+	}

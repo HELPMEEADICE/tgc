@@ -1,9 +1,10 @@
 decisions_BGD_cabinet = {
+	priority = 100000
 	icon = marco_debug
 	
 	visible = {
-		tag = BGD
+		always = yes
 	}
 	
-	scripted_gui = bgd_cabinet_gui
+	scripted_gui = bgd_cabinet_guis
 }

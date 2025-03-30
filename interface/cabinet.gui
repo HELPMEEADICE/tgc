@@ -7,7 +7,23 @@ guiTypes = {
 		}
 		size = {
 			width = 100%
-			height = 210
+			height = 410
+		}
+
+		buttonType = {
+			name = "president_icon"
+			spriteType = "GFX_gui_kasumi_small"
+			position = {
+				x = -50
+				y = -120
+			}
+			clicksound = click_close
+			orientation = CENTER
+			scale = 1.3
+		}
+		instantTextBoxType = {
+			name = "president_text"
+			
 		}
 	}
 }

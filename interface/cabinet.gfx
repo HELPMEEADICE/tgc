@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_gui_kasumi_small"
+		texturefile = "gfx\interface\BGD\Bandori_Kasumi_icon.png"
+	}
+	spriteType = {
+		name = "GFX_gui_arisa_small"
+		texturefile = "gfx\interface\BGD\Bandori_Arisa_icon.png"
+	}
+	spriteType = {
+		name = "GFX_gui_saaya_small"
+		texturefile = "gfx\interface\BGD\Bandori_Saaya_icon.png"
+	}
+	spriteType = {
+		name = "GFX_gui_rimi_small"
+		texturefile = "gfx\interface\BGD\Bandori_Rimi_icon.png"
+	}
+	spriteType = {
+		name = "GFX_gui_otae_small"
+		texturefile = "gfx\interface\BGD\Bandori_Tae_icon.png"
+	}
+	spriteType = {
+		name = "GFX_gui_asuka_small"
+		texturefile = "gfx\interface\BGD\Asuka_icon.png"
+	}
+}
