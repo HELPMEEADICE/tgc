@@ -15,7 +15,7 @@ guiTypes = {
 			spriteType = "GFX_gui_kasumi_small"
 			position = {
 				x = -50
-				y = -120
+				y = -180
 			}
 			clicksound = click_close
 			orientation = CENTER
@@ -23,7 +23,58 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "president_text"
-			
+			position = {
+				x = -100
+				y = -70
+			}
+			font = "VCR02_26"
+			text = president_text_gui
+			format = center
+			orientation = CENTER
+		}
+	}
+
+	containerWindowType = {
+		name = "bgd_president_gui"
+		size = {
+			width = 635
+			height = 600
+		}
+		show_position = {
+			x = 540
+			y = 83
+		}
+		hide_position = {
+			x = 540
+			y = -600
+		}
+		show_animation_type = accelerated
+		hide_animation_type = accelerated
+		animation_type = decelerated
+		animation_time = 360
+		background = {
+			name = "background_president"
+			quadTextureSprite = "GFX_gui_BGD_cabinet_background"
+		}
+		buttonType = {
+			name = "close_buttom_president_window"
+			spriteType = GFX_closebutton
+			position = {
+				x = -35
+				y = 5
+			}
+			orientation = UPPER_RIGHT
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+		}
+		iconType = {
+			name = "president_image"
+			spriteType = "GFX_gui_ksm_large"
+			scale = 0.7
+			position = {
+				x = 300
+				y = 195
+			}
 		}
 	}
 }

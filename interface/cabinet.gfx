@@ -23,4 +23,31 @@ spriteTypes = {
 		name = "GFX_gui_asuka_small"
 		texturefile = "gfx\interface\BGD\Asuka_icon.png"
 	}
+
+
+	spriteType = {
+		name = "GFX_gui_ars_large"
+		texturefile = "gfx\interface\BGD\ars_large.png"
+	}
+	spriteType = {
+		name = "GFX_gui_ksm_large"
+		texturefile = "gfx\interface\BGD\ksm_large.png"
+	}
+	spriteType = {
+		name = "GFX_gui_otae_large"
+		texturefile = "gfx\interface\BGD\otae_large.png"
+	}
+	spriteType = {
+		name = "GFX_gui_rimi_large"
+		texturefile = "gfx\interface\BGD\rimi_large.png"
+	}
+	spriteType = {
+		name = "GFX_gui_saaya_large"
+		texturefile = "gfx\interface\BGD\saaya_large.png"
+	}
+
+	spriteType = {
+		name = "GFX_gui_BGD_cabinet_background"
+		texturefile = "gfx\interface\BGD\BGD_cabinet_background.png"
+	}
 }

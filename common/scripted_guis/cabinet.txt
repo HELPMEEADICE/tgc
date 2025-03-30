@@ -2,5 +2,32 @@ scripted_gui = {
 	bgd_cabinet_guis = {
 		context_type = decision_category
 		window_name = "bgd_cabinet_guis"
+		effects = {
+			president_icon_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = open_president_main_window }
+					}
+					set_country_flag = open_president_main_window
+				}
+				else = {
+					clr_country_flag = open_president_main_window
+				}
+			}
+		}
+	}
+
+
+	bgd_president_gui = {
+		context_type = player_context
+		window_name = "bgd_president_gui"
+		visible = {
+			has_country_flag = open_president_main_window
+		}
+		effects = {
+			close_buttom_president_window_click = {
+				clr_country_flag = open_president_main_window
+			}
+		}
 	}
 }
