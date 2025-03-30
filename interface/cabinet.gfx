@@ -50,4 +50,9 @@ spriteTypes = {
 		name = "GFX_gui_BGD_cabinet_background"
 		texturefile = "gfx\interface\BGD\BGD_cabinet_background.png"
 	}
+	spriteType = {
+		name = "GFX_gui_BGD_cabinet_ppp_party"
+		texturefile = "gfx\interface\BGD\ppp_party.png.png"
+	}
+}
 }

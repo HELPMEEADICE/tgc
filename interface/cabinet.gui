@@ -233,5 +233,179 @@ guiTypes = {
 				y = 195
 			}
 		}
+		instantTextBoxType = {
+			name = "title_president"
+			font = "VCR02_36"
+			position = {
+				x = 10
+				y = 10
+			}
+			text = prime_minister_text_gui
+		}
+	}
+
+
+	#财政部长_GUI
+	containerWindowType = {
+		name = "bgd_mf_gui"
+		size = {
+			width = 635
+			height = 600
+		}
+		show_position = {
+			x = 540
+			y = 83
+		}
+		hide_position = {
+			x = 540
+			y = -600
+		}
+		show_animation_type = accelerated
+		hide_animation_type = accelerated
+		animation_type = decelerated
+		animation_time = 360
+		background = {
+			name = "background_mf"
+			quadTextureSprite = "GFX_gui_BGD_cabinet_background"
+		}
+		buttonType = {
+			name = "close_buttom_mf_window"
+			spriteType = GFX_closebutton
+			position = {
+				x = -35
+				y = 5
+			}
+			orientation = UPPER_RIGHT
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+		}
+		iconType = {
+			name = "mf_image"
+			spriteType = "GFX_gui_saaya_large"
+			scale = 0.7
+			position = {
+				x = 300
+				y = 195
+			}
+		}
+		instantTextBoxType = {
+			name = "title_president"
+			font = "VCR02_36"
+			position = {
+				x = 10
+				y = 10
+			}
+			text = minister_of_finance_text_gui
+		}
+	}
+
+
+
+	#内政部长_GUI
+	containerWindowType = {
+		name = "bgd_mn_gui"
+		size = {
+			width = 635
+			height = 600
+		}
+		show_position = {
+			x = 540
+			y = 83
+		}
+		hide_position = {
+			x = 540
+			y = -600
+		}
+		show_animation_type = accelerated
+		hide_animation_type = accelerated
+		animation_type = decelerated
+		animation_time = 360
+		background = {
+			name = "background_mn"
+			quadTextureSprite = "GFX_gui_BGD_cabinet_background"
+		}
+		buttonType = {
+			name = "close_buttom_mn_window"
+			spriteType = GFX_closebutton
+			position = {
+				x = -35
+				y = 5
+			}
+			orientation = UPPER_RIGHT
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+		}
+		iconType = {
+			name = "mn_image"
+			spriteType = "GFX_gui_rimi_large"
+			scale = 0.7
+			position = {
+				x = 300
+				y = 195
+			}
+		}
+		instantTextBoxType = {
+			name = "title_president"
+			font = "VCR02_36"
+			position = {
+				x = 10
+				y = 10
+			}
+			text = minister_of_nterior_text_gui
+		}
+	}
+
+	#国务卿_GUI
+	containerWindowType = {
+		name = "bgd_ns_gui"
+		size = {
+			width = 635
+			height = 600
+		}
+		show_position = {
+			x = 540
+			y = 83
+		}
+		hide_position = {
+			x = 540
+			y = -600
+		}
+		show_animation_type = accelerated
+		hide_animation_type = accelerated
+		animation_type = decelerated
+		animation_time = 360
+		background = {
+			name = "background_ns"
+			quadTextureSprite = "GFX_gui_BGD_cabinet_background"
+		}
+		buttonType = {
+			name = "close_buttom_ns_window"
+			spriteType = GFX_closebutton
+			position = {
+				x = -35
+				y = 5
+			}
+			orientation = UPPER_RIGHT
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+		}
+		iconType = {
+			name = "ns_image"
+			spriteType = "GFX_gui_otae_large"
+			scale = 0.7
+			position = {
+				x = 300
+				y = 195
+			}
+		}
+		instantTextBoxType = {
+			name = "title_president"
+			font = "VCR02_36"
+			position = {
+				x = 10
+				y = 10
+			}
+			text = secretary_text_gui
+		}
 	}
 }

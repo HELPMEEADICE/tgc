@@ -41,6 +41,63 @@ scripted_gui = {
 					clr_country_flag = open_president_main_window
 				}
 			}
+			minister_of_finance_icon_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = open_mf_main_window }
+					}
+					clr_country_flag = open_president_main_window
+					#总理
+					clr_country_flag = open_pm_main_window
+					#内政
+					clr_country_flag = open_mn_main_window
+					#财政
+					set_country_flag = open_mf_main_window
+					#外交
+					clr_country_flag = open_ns_main_window
+				}
+				else = {
+					clr_country_flag = open_mf_main_window
+				}
+			}
+			minister_of_nterior_icon_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = open_mn_main_window }
+					}
+					clr_country_flag = open_president_main_window
+					#总理
+					clr_country_flag = open_pm_main_window
+					#内政
+					set_country_flag = open_mn_main_window
+					#财政
+					clr_country_flag = open_mf_main_window
+					#外交
+					clr_country_flag = open_ns_main_window
+				}
+				else = {
+					clr_country_flag = open_mn_main_window
+				}
+			}
+			secretary_icon_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = open_ns_main_window }
+					}
+					clr_country_flag = open_president_main_window
+					#总理
+					clr_country_flag = open_pm_main_window
+					#内政
+					clr_country_flag = open_mn_main_window
+					#财政
+					clr_country_flag = open_mf_main_window
+					#外交
+					set_country_flag = open_ns_main_window
+				}
+				else = {
+					clr_country_flag = open_ns_main_window
+				}
+			}
 		}
 	}
 
@@ -66,6 +123,42 @@ scripted_gui = {
 		effects = {
 			close_buttom_pm_window_click = {
 				clr_country_flag = open_pm_main_window
+			}
+		}
+	}
+	bgd_mf_gui = {
+		context_type = player_context
+		window_name = "bgd_mf_gui"
+		visible = {
+			has_country_flag = open_mf_main_window
+		}
+		effects = {
+			close_buttom_mf_window_click = {
+				clr_country_flag = open_mf_main_window
+			}
+		}
+	}
+	bgd_mn_gui = {
+		context_type = player_context
+		window_name = "bgd_mn_gui"
+		visible = {
+			has_country_flag = open_mn_main_window
+		}
+		effects = {
+			close_buttom_mn_window_click = {
+				clr_country_flag = open_mn_main_window
+			}
+		}
+	}
+	bgd_ns_gui = {
+		context_type = player_context
+		window_name = "bgd_ns_gui"
+		visible = {
+			has_country_flag = open_ns_main_window
+		}
+		effects = {
+			close_buttom_ns_window_click = {
+				clr_country_flag = open_ns_main_window
 			}
 		}
 	}
