@@ -10,6 +10,7 @@ guiTypes = {
 			height = 410
 		}
 
+		#总统
 		buttonType = {
 			name = "president_icon"
 			spriteType = "GFX_gui_kasumi_small"
@@ -31,6 +32,107 @@ guiTypes = {
 			text = president_text_gui
 			format = center
 			orientation = CENTER
+		}
+
+		#财政部长
+		buttonType = {
+			name = "minister_of_finance_icon"
+			spriteType = "GFX_gui_saaya_small"
+			position = {
+				x = 70
+				y = 0
+			}
+			clicksound = click_close
+			orientation = CENTER
+			scale = 1.1
+		}
+		instantTextBoxType = {
+			name = "minister_of_finance_text"
+			position = {
+				x = 15
+				y = 95
+			}
+			font = "VCR02_16"
+			text = minister_of_finance_text_gui
+			format = center
+			orientation = CENTER
+			#scale = 0.8
+		}
+
+		#总理
+		buttonType = {
+			name = "prime_minister_icon"
+			spriteType = "GFX_gui_arisa_small"
+			position = {
+				x = -150
+				y = 0
+			}
+			clicksound = click_close
+			orientation = CENTER
+			scale = 1.1
+		}
+		instantTextBoxType = {
+			name = "prime_minister_text"
+			position = {
+				x = -205
+				y = 95
+			}
+			font = "VCR02_16"
+			text = prime_minister_text_gui
+			format = center
+			orientation = CENTER
+			#scale = 0.8
+		}
+
+		#内政部长
+		buttonType = {
+			name = "minister_of_nterior_icon"
+			spriteType = "GFX_gui_rimi_small"
+			position = {
+				x = -205
+				y = -145
+			}
+			clicksound = click_close
+			orientation = CENTER
+			scale = 1.1
+		}
+		instantTextBoxType = {
+			name = "minister_of_nterior_text"
+			position = {
+				x = -260
+				y = -55
+			}
+			font = "VCR02_16"
+			text = minister_of_nterior_text_gui
+			format = center
+			orientation = CENTER
+			#scale = 0.8
+		}
+
+
+		#国务卿
+		buttonType = {
+			name = "secretary_icon"
+			spriteType = "GFX_gui_otae_small"
+			position = {
+				x = 125
+				y = -145
+			}
+			clicksound = click_close
+			orientation = CENTER
+			scale = 1.1
+		}
+		instantTextBoxType = {
+			name = "secretary_text"
+			position = {
+				x = 70
+				y = -55
+			}
+			font = "VCR02_16"
+			text = secretary_text_gui
+			format = center
+			orientation = CENTER
+			#scale = 0.8
 		}
 	}
 
@@ -70,6 +172,61 @@ guiTypes = {
 		iconType = {
 			name = "president_image"
 			spriteType = "GFX_gui_ksm_large"
+			scale = 0.7
+			position = {
+				x = 300
+				y = 195
+			}
+		}
+		instantTextBoxType = {
+			name = "title_president"
+			font = "VCR02_36"
+			position = {
+				x = 10
+				y = 10
+			}
+			text = president_text_gui
+		}
+	}
+
+
+	#总理_GUI
+	containerWindowType = {
+		name = "bgd_pm_gui"
+		size = {
+			width = 635
+			height = 600
+		}
+		show_position = {
+			x = 540
+			y = 83
+		}
+		hide_position = {
+			x = 540
+			y = -600
+		}
+		show_animation_type = accelerated
+		hide_animation_type = accelerated
+		animation_type = decelerated
+		animation_time = 360
+		background = {
+			name = "background_pm"
+			quadTextureSprite = "GFX_gui_BGD_cabinet_background"
+		}
+		buttonType = {
+			name = "close_buttom_pm_window"
+			spriteType = GFX_closebutton
+			position = {
+				x = -35
+				y = 5
+			}
+			orientation = UPPER_RIGHT
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+		}
+		iconType = {
+			name = "pm_image"
+			spriteType = "GFX_gui_ars_large"
 			scale = 0.7
 			position = {
 				x = 300

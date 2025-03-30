@@ -9,6 +9,33 @@ scripted_gui = {
 						NOT = { has_country_flag = open_president_main_window }
 					}
 					set_country_flag = open_president_main_window
+					#总理
+					clr_country_flag = open_pm_main_window
+					#内政
+					clr_country_flag = open_mn_main_window
+					#财政
+					clr_country_flag = open_mf_main_window
+					#外交
+					clr_country_flag = open_ns_main_window
+				}
+				else = {
+					clr_country_flag = open_president_main_window
+				}
+			}
+			prime_minister_icon_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = open_pm_main_window }
+					}
+					clr_country_flag = open_president_main_window
+					#总理
+					set_country_flag = open_pm_main_window
+					#内政
+					clr_country_flag = open_mn_main_window
+					#财政
+					clr_country_flag = open_mf_main_window
+					#外交
+					clr_country_flag = open_ns_main_window
 				}
 				else = {
 					clr_country_flag = open_president_main_window
@@ -27,6 +54,18 @@ scripted_gui = {
 		effects = {
 			close_buttom_president_window_click = {
 				clr_country_flag = open_president_main_window
+			}
+		}
+	}
+	bgd_pm_gui = {
+		context_type = player_context
+		window_name = "bgd_pm_gui"
+		visible = {
+			has_country_flag = open_pm_main_window
+		}
+		effects = {
+			close_buttom_pm_window_click = {
+				clr_country_flag = open_pm_main_window
 			}
 		}
 	}
