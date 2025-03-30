@@ -1,0 +1,6 @@
+scripted_gui = {
+	bgd_cabinet_gui = {
+		context_type = decision_category
+		window_name = "bgd_cabinet_guis"
+	}
+}

@@ -1,0 +1,9 @@
+decisions_BGD_cabinet = {
+	icon = marco_debug
+	
+	visible = {
+		tag = BGD
+	}
+	
+	scripted_gui = bgd_cabinet_gui
+}
