@@ -1,9 +1,10 @@
 decisions_BGD_cabinet = {
 	priority = 100000
-	icon = marco_debug
+	icon = GFX_gui_ppp_party_small
+	
 	
 	visible = {
-		always = yes
+		has_country_flag = cabinet_up
 	}
 	
 	scripted_gui = bgd_cabinet_guis

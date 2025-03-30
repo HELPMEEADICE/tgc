@@ -1,20 +1,17 @@
 decisions_BGD_cabinet = {
     BGD_change_cabinet = {
-		icon = generic_industry
+		icon = GFX_Banned_Moderates
 		name = BGD_decisions_BGD_cabinet
 		fire_only_once = no
 		days_re_enable = 1
 		cost = 0
 		allowed = {
-			tag = BGD
+			always = yes
 		}
 		visible = {
 		}
 		available = {
-			tag = BGD
-		}
-		ai_will_do = {
-			base = 0
+			always = no
 		}
 		complete_effect = {
 			}

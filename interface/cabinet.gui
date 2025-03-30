@@ -9,6 +9,16 @@ guiTypes = {
 			width = 100%
 			height = 410
 		}
+		iconType = {
+			name = "Party_icon"
+			spriteType = "GFX_gui_BGD_cabinet_ppp_party"
+			orientation = CENTER_DOWN
+			position = {
+				x = -59
+				y = -130
+			}
+			scale = 1.8
+		}
 
 		#总统
 		buttonType = {
@@ -187,6 +197,14 @@ guiTypes = {
 			}
 			text = president_text_gui
 		}
+		iconType = {
+			name = "Party_icon_president"
+			spriteType = "GFX_gui_BGD_cabinet_ppp_party"
+			position = {
+				x = 150
+				y = 17
+			}
+		}
 	}
 
 
@@ -234,13 +252,21 @@ guiTypes = {
 			}
 		}
 		instantTextBoxType = {
-			name = "title_president"
+			name = "title_pm"
 			font = "VCR02_36"
 			position = {
 				x = 10
 				y = 10
 			}
 			text = prime_minister_text_gui
+		}
+		iconType = {
+			name = "Party_icon_pm"
+			spriteType = "GFX_gui_BGD_cabinet_ppp_party"
+			position = {
+				x = 150
+				y = 17
+			}
 		}
 	}
 
@@ -289,13 +315,21 @@ guiTypes = {
 			}
 		}
 		instantTextBoxType = {
-			name = "title_president"
+			name = "title_mf"
 			font = "VCR02_36"
 			position = {
 				x = 10
 				y = 10
 			}
 			text = minister_of_finance_text_gui
+		}
+		iconType = {
+			name = "Party_icon_mf"
+			spriteType = "GFX_gui_BGD_cabinet_ppp_party"
+			position = {
+				x = 150
+				y = 17
+			}
 		}
 	}
 
@@ -345,13 +379,21 @@ guiTypes = {
 			}
 		}
 		instantTextBoxType = {
-			name = "title_president"
+			name = "title_mn"
 			font = "VCR02_36"
 			position = {
 				x = 10
 				y = 10
 			}
 			text = minister_of_nterior_text_gui
+		}
+		iconType = {
+			name = "Party_icon_mn"
+			spriteType = "GFX_gui_BGD_cabinet_ppp_party"
+			position = {
+				x = 150
+				y = 17
+			}
 		}
 	}
 
@@ -399,13 +441,21 @@ guiTypes = {
 			}
 		}
 		instantTextBoxType = {
-			name = "title_president"
+			name = "title_ns"
 			font = "VCR02_36"
 			position = {
 				x = 10
 				y = 10
 			}
 			text = secretary_text_gui
+		}
+		iconType = {
+			name = "Party_icon_ns"
+			spriteType = "GFX_gui_BGD_cabinet_ppp_party"
+			position = {
+				x = 150
+				y = 17
+			}
 		}
 	}
 }

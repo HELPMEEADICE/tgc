@@ -52,7 +52,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_gui_BGD_cabinet_ppp_party"
-		texturefile = "gfx\interface\BGD\ppp_party.png.png"
+		texturefile = "gfx\interface\BGD\ppp_party.png"
 	}
-}
+
+	spriteType = {
+		name = "GFX_gui_ppp_logo_small"
+		texturefile = "gfx\interface\ideas\ppp_logo_small.png"
+	}
+	spriteType = {
+		name = "GFX_gui_ppp_party_small"
+		texturefile = "gfx\interface\ideas\ppp_party_small.png"
+	}
 }
