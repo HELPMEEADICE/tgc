@@ -205,6 +205,35 @@ guiTypes = {
 				y = 17
 			}
 		}
+		ButtonType = {
+			name = "introduce_ksm_buttom"
+			position = { x=220 y=100 }
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "introduce_ksm_buttom"
+			buttonFont = "VCR02_14"
+			clicksound = click_close
+		}
+		ButtonType = {
+			name = "decision_ksm_buttom"
+			position = { x=50 y=100 }
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "decision_ksm_buttom"
+			buttonFont = "VCR02_14"
+			clicksound = click_close
+		}
+		instantTextBoxType = {
+			name = "introduce_ksm_text"
+			text = decision_ksm
+			font = "VCR02_14"
+			position = {
+				x = 10
+				y = 200
+			}
+			size = {
+				width = 300
+				height = 400
+			}
+		}
 	}
 
 

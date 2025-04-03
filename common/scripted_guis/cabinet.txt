@@ -17,6 +17,8 @@ scripted_gui = {
 					clr_country_flag = open_mf_main_window
 					#外交
 					clr_country_flag = open_ns_main_window
+					set_country_flag = open_president_decision_window
+					clr_country_flag = open_president_introduce_window
 				}
 				else = {
 					clr_country_flag = open_president_main_window
@@ -102,6 +104,7 @@ scripted_gui = {
 	}
 
 
+
 	bgd_president_gui = {
 		context_type = player_context
 		window_name = "bgd_president_gui"
@@ -112,8 +115,26 @@ scripted_gui = {
 			close_buttom_president_window_click = {
 				clr_country_flag = open_president_main_window
 			}
+
+			introduce_ksm_buttom_click = {
+				set_country_flag = open_president_introduce_window
+				clr_country_flag = open_president_decision_window
+			}
+			decision_ksm_buttom_click = {
+				set_country_flag = open_president_decision_window
+				clr_country_flag = open_president_introduce_window
+			}
+		}
+		triggers = {
+			introduce_ksm_text_visible = {
+				has_country_flag = open_president_introduce_window
+			}
 		}
 	}
+
+
+
+
 	bgd_pm_gui = {
 		context_type = player_context
 		window_name = "bgd_pm_gui"

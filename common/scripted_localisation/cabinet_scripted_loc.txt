@@ -23,15 +23,15 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = minister_of_nterior_cabinet_name
+	name = minister_of_finance_cabinet_name
     text = {
 		trigger = {
 			has_country_flag = cabinet_japan_name
 		}
-		localization_key = minister_of_nterior_text_gui_jp
+		localization_key = minister_of_finance_text_gui_jp
 	}
 	text = {
-		localization_key = minister_of_nterior_text_gui_us
+		localization_key = minister_of_finance_text_gui_us
 	}
 }
 
