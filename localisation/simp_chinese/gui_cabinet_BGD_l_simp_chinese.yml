@@ -1,9 +1,19 @@
 ﻿l_simp_chinese:
-president_text_gui: "大总统\n户山香澄"
+
+
+secretary_text_gui_us: "国务卿"
+secretary_text_gui_jp: "外务省长"
+minister_of_finance_text_gui_us: "财政部长"
+minister_of_finance_text_gui_jp: "财务省长\n山吹沙绫"
+minister_of_nterior_text_gui_us: "内政部长\n牛込里美"
+minister_of_nterior_text_gui_jp: "内务省长\n牛込里美"
+
+president_text_gui: "总统\n户山香澄"
 prime_minister_text_gui: "总理\n市谷有咲"
-secretary_text_gui: "国务卿\n花园多惠"
-minister_of_finance_text_gui: "财政部长\n山吹沙绫"
-minister_of_nterior_text_gui: "内政部长\n牛込里美"
+secretary_text_gui: "[secretary_cabinet_name]\n花园多惠"
+minister_of_finance_text_gui: "[minister_of_finance_cabinet_name]\n山吹沙绫"
+minister_of_nterior_text_gui: "[minister_of_nterior_cabinet_name]\n牛込里美"
+
 
 BGD_decisions_BGD_cabinet: "天皇传了几千年，共和执政第一年"
 decisions_BGD_cabinet: "联合政府内阁"
