@@ -223,16 +223,13 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "introduce_ksm_text"
-			text = decision_ksm
+			text = "decision_ksm"
 			font = "VCR02_14"
 			position = {
 				x = 10
 				y = 200
 			}
-			size = {
-				width = 300
-				height = 400
-			}
+			maxWidth = 350
 		}
 	}
 
