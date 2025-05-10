@@ -129,6 +129,18 @@ scripted_gui = {
 			introduce_ksm_text_visible = {
 				has_country_flag = open_president_introduce_window
 			}
+			decisions_ksm_text_visible = {
+				has_country_flag = open_president_decision_window
+			}
+			party_support_text_visible = {
+				has_country_flag = open_president_decision_window
+			}
+			popular_support_text_visible = {
+				has_country_flag = open_president_decision_window
+			}
+			supernatural_attunement_text_visible = {
+				has_country_flag = open_president_decision_window
+			}
 		}
 	}
 

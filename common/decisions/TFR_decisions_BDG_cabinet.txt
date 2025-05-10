@@ -1,7 +1,7 @@
 decisions_BGD_cabinet = {
     BGD_change_cabinet = {
 		icon = GFX_Banned_Moderates
-		name = BGD_decisions_BGD_cabinet
+		name = BGD_change_cabinet
 		fire_only_once = no
 		days_re_enable = 1
 		cost = 0
@@ -15,5 +15,230 @@ decisions_BGD_cabinet = {
 		}
 		complete_effect = {
 			}
+	}
+
+	BGD_Starlight_Pledge = {
+		#“星光下的承诺”——总统全国巡回演讲
+		icon = GFX_Banned_Moderates
+		name = BGD_Starlight_Pledge
+		fire_only_once = no
+		days_remove = 35
+		days_re_enable = 40
+		cost = 100
+		allowed = {
+			always = yes
+		}
+		visible = {
+			check_variable = { popular_support < 100 }
+		}
+		available = {
+			check_variable = { popular_support < 100 }
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = "ADD_popular_support"
+			hidden_effect = {
+				random_list = {
+				20 = { add_to_variable = { popular_support = 10 } }
+				60 = { add_to_variable = { popular_support = 15 } }
+				15 = { add_to_variable = { popular_support = 20 } }
+				5 = { add_to_variable = { popular_support = 25 } }
+				}
+			}
 		}
 	}
+
+	BGD_Cultural_Revitalization_Series = {
+		#“希望的回响”——文化振兴系列活动
+		icon = GFX_Banned_Moderates
+		name = BGD_Cultural_Revitalization_Series
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		cost = 75
+		allowed = {
+			always = yes
+		}
+		visible = {
+			check_variable = { popular_support < 100 }
+		}
+		available = {
+			check_variable = { popular_support < 100 }
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = "ADD_popular_support"
+			hidden_effect = {
+				random_list = {
+				20 = { add_to_variable = { popular_support = 1 } }
+				60 = { add_to_variable = { popular_support = 5 } }
+				15 = { add_to_variable = { popular_support = 7 } }
+				5 = { add_to_variable = { popular_support = 10 } }
+				}
+			}
+		}
+	}
+
+	BGD_Civic_Deliberation_Platform = {
+		#“民声直达”——公民议政平台建设
+		icon = GFX_Banned_Moderates
+		name = BGD_Civic_Deliberation_Platform
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 20
+		cost = 50
+		allowed = {
+			always = yes
+		}
+		visible = {
+			check_variable = { popular_support < 100 }
+		}
+		available = {
+			check_variable = { popular_support < 100 }
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = "ADD_popular_support"
+			hidden_effect = {
+				random_list = {
+				20 = { add_to_variable = { popular_support = 1 } }
+				60 = { add_to_variable = { popular_support = 3 } }
+				15 = { add_to_variable = { popular_support = 5 } }
+				5 = { add_to_variable = { popular_support = 7 } }
+				}
+			}
+		}
+	}
+
+	BGD_Party_Consolidating_Party_Support = {
+		#“闪耀之路”——党内核心思想学习强化周
+		icon = GFX_Banned_Moderates
+		name = BGD_Party_Consolidating_Party_Support
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 50
+		cost = 75
+		allowed = {
+			always = yes
+		}
+		visible = {
+			check_variable = { party_support < 100 }
+		}
+		available = {
+			check_variable = { party_support < 100 }
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = "ADD_party_support"
+			hidden_effect = {
+				random_list = {
+				20 = { add_to_variable = { party_support = 10 } }
+				60 = { add_to_variable = { party_support = 15 } }
+				15 = { add_to_variable = { party_support = 20 } }
+				5 = { add_to_variable = { party_support = 25 } }
+				}
+			}
+		}
+	}
+
+	BGD_Party_Presidential_Dialogue_with_Party_Delegates = {
+		#“星辰的指引”——总统与党员代表恳谈会
+		icon = GFX_Banned_Moderates
+		name = BGD_Party_Presidential_Dialogue_with_Party_Delegates
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 30
+		cost = 50
+		allowed = {
+			always = yes
+		}
+		visible = {
+			check_variable = { party_support < 100 }
+		}
+		available = {
+			check_variable = { party_support < 100 }
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = "ADD_party_support"
+			hidden_effect = {
+				random_list = {
+				20 = { add_to_variable = { party_support = 5 } }
+				60 = { add_to_variable = { party_support = 7 } }
+				15 = { add_to_variable = { party_support = 10 } }
+				5 = { add_to_variable = { party_support = 15 } }
+				}
+			}
+		}
+	}
+
+	BGD_Party_Legislation_Drive = {
+		#“进步纲领的细化”——政策研讨与党内立法推进
+		icon = GFX_Banned_Moderates
+		name = BGD_Party_Legislation_Drive
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 50
+		cost = 50
+		allowed = {
+			always = yes
+		}
+		visible = {
+			check_variable = { party_support < 100 }
+		}
+		available = {
+			check_variable = { party_support < 100 }
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = "ADD_party_support"
+			hidden_effect = {
+				random_list = {
+				20 = { add_to_variable = { party_support = 1 } }
+				60 = { add_to_variable = { party_support = 5 } }
+				15 = { add_to_variable = { party_support = 8 } }
+				5 = { add_to_variable = { party_support = 10 } }
+				}
+			}
+		}
+	}
+
+	BGD_SA_Research_into_Supernatural_Resonance = {
+		#超自然力量共鸣研究
+		icon = GFX_Banned_Moderates
+		name = BGD_SA_Research_into_Supernatural_Resonance
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 30
+		cost = 150
+		allowed = {
+			always = yes
+		}
+		visible = {
+			check_variable = { supernatural_attunement < 100 }
+		}
+		available = {
+			check_variable = { supernatural_attunement < 100 }
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = "ADD_supernatural_attunement"
+			hidden_effect = {add_to_variable = { supernatural_attunement = 20 }
+			}
+		}
+	}
+}

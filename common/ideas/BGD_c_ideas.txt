@@ -1,0 +1,168 @@
+ideas = {
+	hidden_ideas ={
+		# --- 民众支持度 (Popular Support) ---
+		JAP_popular_support_very_high = {
+		    allowed = { always = no } # Added by event
+		    removal_cost = -1
+		    modifier = {
+		        stability_factor = 0.15
+		        political_power_gain = 0.20
+		        war_support_factor = 0.10
+		        production_factory_max_efficiency_factor = 0.05
+		        consumer_goods_factor = -0.05 # 民众满意，需求降低
+		    }
+		}
+		JAP_popular_support_high = {
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        stability_factor = 0.10
+		        political_power_gain = 0.10
+		        war_support_factor = 0.05
+		        consumer_goods_factor = -0.02
+		    }
+		}
+		JAP_popular_support_average = {
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        stability_factor = 0.03
+		        political_power_gain = 0.05
+		    }
+		}
+		JAP_popular_support_low = {
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        stability_factor = -0.10
+		        political_power_gain = -0.10
+		        war_support_factor = -0.05
+		        recruitable_population_factor = -0.02
+		    }
+		}
+		JAP_popular_support_very_low = {
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        stability_factor = -0.20
+		        political_power_gain = -0.20
+		        war_support_factor = -0.15
+		        production_speed_buildings_factor = -0.15 # 罢工等影响
+		        surrender_limit_offset = -0.1 # 更容易投降
+		        daily_compliance_gain = -0.05
+		    }
+		    # Consider adding a triggered_modifier here for risk of negative events like riots
+		}
+
+
+		# --- 党内支持度 (Shining Party Support) ---
+		JAP_party_support_absolute = {
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        political_power_gain = 0.25
+		        stability_factor = 0.05
+		        espionage_operation_launch_success_chance_factor = 0.05 # 党内团结，不易泄密
+		    }
+		}
+		JAP_party_support_strong = {
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        political_power_gain = 0.15
+		        stability_factor = 0.03
+		    }
+		}
+		JAP_party_support_moderate = {
+		    picture = GFX_idea_JAP_party_support_moderate # Placeholder GFX
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        political_power_gain = 0.05
+		        # No major positive or negative effects, baseline
+		    }
+		}
+		JAP_party_support_wavering = {
+		    picture = GFX_idea_JAP_party_support_wavering # Placeholder GFX
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        political_power_gain = -0.15
+		        stability_factor = -0.05
+		        # Risk of negative party events
+		    }
+		}
+		JAP_party_support_critical = {
+		    picture = GFX_idea_JAP_party_support_critical # Placeholder GFX
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        political_power_gain = -0.30
+		        stability_factor = -0.15
+		        # High risk of party split events or civil war elements if not addressed
+		        # May disable certain focuses or decisions
+		    }
+		}
+
+
+		# --- “超自然力量”契合度 (Supernatural Attunement) ---
+		JAP_supernatural_attunement_perfect = {
+		    allowed = { always = no }
+		    removal_cost = -1
+		    rule = { # This allows it to show up in the "Country" view if added by event.
+		        # This idea is special and should be visible
+		        # Not a standard "modifier" block idea but a country rule based one.
+		        # This might need to be a "country_modifier" if that's the syntax.
+		        # For simple national spirit:
+		    }
+		    modifier = {
+		        political_power_gain = 0.10 # 天命所归
+		        stability_factor = 0.10
+		        war_support_factor = 0.05
+		        research_speed_factor = 0.07 # 神秘的启示
+		        training_time_army_factor = -0.10 # 训练有素，如有神助
+		        army_attack_factor = 0.05 # 超自然力量加持
+		        army_defence_factor = 0.05
+		        # Chance to get positive unique events or outcomes
+		    }
+		}
+		JAP_supernatural_attunement_strong = {
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        political_power_gain = 0.05
+		        stability_factor = 0.05
+		        research_speed_factor = 0.03
+		        planning_speed = 0.15 # 战略规划如有神启
+		    }
+		}
+		JAP_supernatural_attunement_moderate = {
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        # Minor or subtle positive effects
+				political_power_gain = 0.03
+		    }
+		}
+		JAP_supernatural_attunement_faint = {
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        political_power_gain = -0.05 # 民心不安
+		        stability_factor = -0.03
+		        # Increased chance of minor negative "omen" events
+		    }
+		}
+		JAP_supernatural_attunement_lost = {
+		    allowed = { always = no }
+		    removal_cost = -1
+		    modifier = {
+		        political_power_gain = -0.15
+		        stability_factor = -0.10
+		        war_support_factor = -0.10
+		        research_speed_factor = -0.05
+		        # High chance of significant negative events or disasters
+		    }
+		}
+	}
+}

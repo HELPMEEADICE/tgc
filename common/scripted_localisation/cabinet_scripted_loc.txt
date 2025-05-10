@@ -35,3 +35,226 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = minister_of_finance_cabinet_name
+    text = {
+		trigger = {
+			has_country_flag = cabinet_japan_name
+		}
+		localization_key = minister_of_finance_text_gui_jp
+	}
+	text = {
+		localization_key = minister_of_finance_text_gui_us
+	}
+}
+
+
+defined_text = {
+	name = popular_support_1
+    text = {
+		trigger = {
+			check_variable = { popular_support > 89 }
+		}
+		localization_key = JAP_popular_support_very_high
+	}
+	text = {
+		trigger = {
+			check_variable = { popular_support > 69 }
+		}
+		localization_key = JAP_popular_support_high
+	}
+	text = {
+		trigger = {
+			check_variable = { popular_support > 39 }
+		}
+		localization_key = JAP_popular_support_average
+	}
+	text = {
+		trigger = {
+			check_variable = { popular_support > 19 }
+		}
+		localization_key = JAP_popular_support_low
+	}
+	text = {
+		localization_key = JAP_popular_support_very_low
+	}
+}
+
+defined_text = {
+	name = party_support_1
+    text = {
+		trigger = {
+			check_variable = { party_support > 89 }
+		}
+		localization_key = JAP_party_support_absolute
+	}
+	text = {
+		trigger = {
+			check_variable = { party_support > 69 }
+		}
+		localization_key = JAP_party_support_strong
+	}
+	text = {
+		trigger = {
+			check_variable = { party_support > 39 }
+		}
+		localization_key = JAP_party_support_moderate
+	}
+	text = {
+		trigger = {
+			check_variable = { party_support > 19 }
+		}
+		localization_key = JAP_party_support_wavering
+	}
+	text = {
+		localization_key = JAP_party_support_critical
+	}
+}
+
+defined_text = {
+	name = supernatural_attunement_1
+    text = {
+		trigger = {
+			check_variable = { supernatural_attunement > 89 }
+		}
+		localization_key = JAP_supernatural_attunement_perfect
+	}
+	text = {
+		trigger = {
+			check_variable = { supernatural_attunement > 69}
+		}
+		localization_key = JAP_supernatural_attunement_strong
+	}
+	text = {
+		trigger = {
+			check_variable = { supernatural_attunement > 39}
+		}
+		localization_key = JAP_supernatural_attunement_moderate
+	}
+	text = {
+		trigger = {
+			check_variable = { supernatural_attunement > 19 }
+		}
+		localization_key = JAP_supernatural_attunement_faint
+	}
+	text = {
+		localization_key = JAP_supernatural_attunement_lost
+	}
+}
+
+defined_text = {
+	name = JAP_popular_support_desc
+    text = {
+		trigger = {
+			check_variable = {
+				popular_support > 89
+			}
+		}
+		localization_key = JAP_popular_support_very_high_desc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popular_support > 69
+			}
+		}
+		localization_key = JAP_popular_support_high_desc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popular_support > 39
+			}
+		}
+		localization_key = JAP_popular_support_average_desc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popular_support > 19
+			}
+		}
+		localization_key = JAP_popular_support_low_desc
+	}
+	text = {
+		localization_key = JAP_popular_support_very_low_desc
+	}
+}
+
+defined_text = {
+	name = JAP_supernatural_attunement_desc
+    text = {
+		trigger = {
+			check_variable = {
+				supernatural_attunement > 89
+			}
+		}
+		localization_key = JAP_supernatural_attunement_perfect_desc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				supernatural_attunement > 69
+			}
+		}
+		localization_key = JAP_supernatural_attunement_strong_desc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				supernatural_attunement > 39
+			}
+		}
+		localization_key = JAP_supernatural_attunement_moderate_desc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				supernatural_attunement > 19
+			}
+		}
+		localization_key = JAP_supernatural_attunement_faint_desc
+	}
+	text = {
+		localization_key = JAP_supernatural_attunement_lost_desc
+	}
+}
+
+defined_text = {
+	name = JAP_party_support_desc
+    text = {
+		trigger = {
+			check_variable = {
+				party_support > 89
+			}
+		}
+		localization_key = JAP_party_support_absolute_desc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				party_support > 69
+			}
+		}
+		localization_key = JAP_party_support_strong_desc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				party_support > 39
+			}
+		}
+		localization_key = JAP_party_support_moderate_desc
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				party_support > 19
+			}
+		}
+		localization_key = JAP_party_support_wavering_desc
+	}
+	text = {
+		localization_key = JAP_party_support_critical_desc
+	}
+}

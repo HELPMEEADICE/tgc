@@ -146,6 +146,7 @@ guiTypes = {
 		}
 	}
 
+	#总统GUI
 	containerWindowType = {
 		name = "bgd_president_gui"
 		size = {
@@ -231,6 +232,55 @@ guiTypes = {
 			}
 			maxWidth = 350
 		}
+		instantTextBoxType = {
+			name = "decisions_ksm_text"
+			text = "decision_about_ksm"
+			font = "VCR02_14"
+			position = {
+				x = 10
+				y = 130
+			}
+			maxWidth = 350
+		}
+		
+		instantTextBoxType = {
+			name = "popular_support_text"
+			text = "[popular_support_1]"
+			pdx_tooltip = "JAP_popular_support_desc_1"
+			font = "VCR02_26"
+			position = {
+				x = 115
+				y = 267
+			}
+			maxHeight = 26
+			maxWidth = 140
+		}
+		instantTextBoxType = {
+			name = "party_support_text"
+			text = "[party_support_1]"
+			pdx_tooltip = "JAP_party_support_desc_1"
+			font = "VCR02_24"
+			position = {
+				x = 115
+				y = 383
+			}
+			maxHeight = 26
+			maxWidth = 140
+		}
+		instantTextBoxType = {
+			name = "supernatural_attunement_text"
+			text = "[supernatural_attunement_1]"
+			pdx_tooltip = "JAP_supernatural_attunement_desc_1"
+			font = "VCR02_24"
+			position = {
+				x = 115
+				y = 503
+			}
+			maxHeight = 26
+			maxWidth = 185
+		}
+
+		
 	}
 
 

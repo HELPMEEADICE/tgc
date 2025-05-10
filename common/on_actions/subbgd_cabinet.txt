@@ -1,11 +1,252 @@
-on_action = {
+on_actions = {
 	on_daily_BGD = {
 		effect = {
+			clamp_variable = {
+			    var = popular_support
+			    min = 0
+				max = 100
+			}
+			clamp_variable = {
+			    var = party_support
+			    min = 0
+				max = 100
+			}
+			clamp_variable = {
+			    var = supernatural_attunement
+			    min = 0
+				max = 100
+			}
+		}
+
+		effect = {
 			if = {
-				limit = {
-					has_country_flag = president_1_run
+					limit =	{
+						check_variable = { popular_support > 89 }
+						has_country_flag = cabinet_up
+					}
+					add_ideas = JAP_popular_support_very_high
+					remove_ideas = {
+						JAP_popular_support_high
+						JAP_popular_support_average
+						JAP_popular_support_low
+						JAP_popular_support_very_low
+					}
 				}
-				
+			else_if = {
+				limit =	{
+					check_variable = { popular_support > 69 }
+					check_variable = { popular_support < 90 }
+					has_country_flag = cabinet_up
+				}
+				add_ideas = JAP_popular_support_high
+				remove_ideas = {
+					JAP_popular_support_very_high
+					JAP_popular_support_average
+					JAP_popular_support_low
+					JAP_popular_support_very_low
+				}
+			}
+			else_if = {
+				limit =	{
+					check_variable = { popular_support > 39 }
+					check_variable = { popular_support < 70 }
+					has_country_flag = cabinet_up
+				}
+				add_ideas = JAP_popular_support_average
+				remove_ideas = {
+					JAP_popular_support_very_high
+					JAP_popular_support_high
+					JAP_popular_support_low
+					JAP_popular_support_very_low
+				}
+			}
+			else_if = {
+				limit =	{
+					check_variable = { popular_support > 19 }
+					check_variable = { popular_support < 40 }
+					has_country_flag = cabinet_up
+				}
+				add_ideas = JAP_popular_support_low
+				remove_ideas = {
+					JAP_popular_support_very_high
+					JAP_popular_support_high
+					JAP_popular_support_average
+					JAP_popular_support_very_low
+				}
+			}
+			else_if = {
+				limit =	{
+					has_country_flag = cabinet_up
+					check_variable = { popular_support < 20 }
+				}
+				add_ideas = JAP_popular_support_very_low
+				remove_ideas = {
+					JAP_popular_support_very_high
+					JAP_popular_support_high
+					JAP_popular_support_average
+					JAP_popular_support_low
+				}
+			}
+			else = {
+				remove_ideas = {
+					JAP_popular_support_very_high
+					JAP_popular_support_high
+					JAP_popular_support_average
+					JAP_popular_support_low
+					JAP_popular_support_very_low
+				}
+			}
+		}
+
+		effect = {
+			if = {
+					limit =	{
+						check_variable = { party_support > 89 }
+						has_country_flag = cabinet_up
+					}
+					add_ideas = JAP_party_support_absolute
+					remove_ideas = {
+						JAP_party_support_strong
+						JAP_party_support_moderate
+						JAP_party_support_wavering
+						JAP_party_support_critical
+					}
+				}
+			else_if = {
+				limit =	{
+					check_variable = { party_support > 69 }
+					has_country_flag = cabinet_up
+				}
+				add_ideas = JAP_party_support_strong
+				remove_ideas = {
+					JAP_party_support_absolute
+					JAP_party_support_moderate
+					JAP_party_support_wavering
+					JAP_party_support_critical
+				}
+			}
+			else_if = {
+				limit =	{
+					check_variable = { party_support > 39 }
+					has_country_flag = cabinet_up
+				}
+				add_ideas = JAP_party_support_moderate
+				remove_ideas = {
+					JAP_party_support_absolute
+					JAP_party_support_strong
+					JAP_party_support_wavering
+					JAP_party_support_critical
+				}
+			}
+			else_if = {
+				limit =	{
+					check_variable = { party_support > 19 }
+					has_country_flag = cabinet_up
+				}
+				add_ideas = JAP_party_support_wavering
+				remove_ideas = {
+					JAP_party_support_absolute
+					JAP_party_support_strong
+					JAP_party_support_moderate
+					JAP_party_support_critical
+				}
+			}
+			else_if = {
+				limit =	{
+					has_country_flag = cabinet_up
+				}
+				add_ideas = JAP_party_support_critical
+				remove_ideas = {
+					JAP_party_support_absolute
+					JAP_party_support_strong
+					JAP_party_support_moderate
+					JAP_party_support_wavering
+				}
+			}
+			else = {
+				remove_ideas = {
+					JAP_party_support_absolute
+					JAP_party_support_strong
+					JAP_party_support_moderate
+					JAP_party_support_wavering
+					JAP_party_support_critical
+				}
+			}
+		}
+
+		effect = {
+			if = {
+					limit =	{
+						check_variable = { supernatural_attunement > 89 }
+						has_country_flag = cabinet_up
+					}
+					add_ideas = JAP_supernatural_attunement_perfect
+					remove_ideas = {
+						JAP_supernatural_attunement_strong
+						JAP_supernatural_attunement_moderate
+						JAP_supernatural_attunement_faint
+						JAP_supernatural_attunement_lost
+					}
+				}
+			else_if = {
+				limit =	{
+					check_variable = { supernatural_attunement > 69 }
+					has_country_flag = cabinet_up
+				}
+				add_ideas = JAP_supernatural_attunement_strong
+				remove_ideas = {
+					JAP_supernatural_attunement_perfect
+					JAP_supernatural_attunement_moderate
+					JAP_supernatural_attunement_faint
+					JAP_supernatural_attunement_lost
+				}
+			}
+			else_if = {
+				limit =	{
+					check_variable = { supernatural_attunement > 39 }
+					has_country_flag = cabinet_up
+				}
+				add_ideas = JAP_supernatural_attunement_moderate
+				remove_ideas = {
+					JAP_supernatural_attunement_perfect
+					JAP_supernatural_attunement_strong
+					JAP_supernatural_attunement_faint
+					JAP_supernatural_attunement_lost
+				}
+			}
+			else_if = {
+				limit =	{
+					check_variable = { supernatural_attunement > 19 }
+					has_country_flag = cabinet_up
+				}
+				add_ideas = JAP_supernatural_attunement_faint
+				remove_ideas = {
+					JAP_supernatural_attunement_perfect
+					JAP_supernatural_attunement_strong
+					JAP_supernatural_attunement_moderate
+					JAP_supernatural_attunement_lost
+				}
+			}
+			else_if = {
+				limit =	{
+					has_country_flag = cabinet_up
+				}
+				add_ideas = JAP_supernatural_attunement_lost
+				remove_ideas = {
+					JAP_supernatural_attunement_perfect
+					JAP_supernatural_attunement_strong
+					JAP_supernatural_attunement_moderate
+					JAP_supernatural_attunement_faint
+				}
+			}
+			else = {
+				remove_ideas = {
+					JAP_supernatural_attunement_perfect
+					JAP_supernatural_attunement_strong
+					JAP_supernatural_attunement_moderate
+					JAP_supernatural_attunement_faint
+					JAP_supernatural_attunement_lost
+				}
 			}
 		}
 	}
