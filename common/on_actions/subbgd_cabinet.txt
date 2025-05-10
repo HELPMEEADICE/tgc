@@ -1,0 +1,12 @@
+on_action = {
+	on_daily_BGD = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = president_1_run
+				}
+				
+			}
+		}
+	}
+}
