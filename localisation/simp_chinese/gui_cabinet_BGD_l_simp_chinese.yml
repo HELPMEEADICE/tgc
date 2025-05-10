@@ -17,7 +17,7 @@ minister_of_nterior_text_gui: "[minister_of_nterior_cabinet_name]\n§K牛込里�
 
 BGD_change_cabinet: "政治是一种科学，是一种艺术。"
 BGD_change_cabinet_desc: "可以设想把自治这个词用于政治以外的范畴。我们说某个人具有自治的能力，就是说这个人自己可以管理自己。在这里，这一说法也可能只是象征性的，因为没有任何人可以自己压服自己，虽然可以认为他自己的高级能力压制他的低级能力，如果能力之间的区别可以辨识的话。但对每个人来说，自己管理自己和受别人管理，这种区别是至关重大的事。从个人这个范畴来理解自治这个词，可能是解释社会自治自相矛盾的钥匙。"
-decisions_BGD_cabinet: "§N联合政府内阁§!"
+decisions_BGD_cabinet: "§M联合政府内阁§!"
 introduce_ksm_buttom: "介绍"
 decision_ksm_buttom: "决议"
 JAP_popular_support_very_high:0 "§G民心所向§!"
