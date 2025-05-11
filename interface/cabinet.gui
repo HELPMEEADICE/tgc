@@ -198,13 +198,30 @@ guiTypes = {
 			}
 			text = president_text_gui
 		}
-		iconType = {
-			name = "Party_icon_president"
-			spriteType = "GFX_gui_BGD_cabinet_ppp_party"
+		#iconType = {
+		#	name = "Party_icon_president"
+		#	spriteType = "GFX_gui_BGD_cabinet_ppp_party"
+		#	position = {
+		#		x = 150
+		#		y = 17
+		#	}
+		#}
+		instantTextBoxType = {
+			name = "icon_desc_1"
+			font = "VCR02_26"
 			position = {
-				x = 150
-				y = 17
+				x = 225
+				y = 40
 			}
+			maxWidth = 208
+			maxHeight = 26
+			text = icon_desc_1
+		}
+		ButtonType = {
+			name = "Party_icon_president"
+			position = { x=150 y=17 }
+			quadTextureSprite = "GFX_gui_BGD_cabinet_ppp_party"
+			clicksound = click_close
 		}
 		ButtonType = {
 			name = "introduce_ksm_buttom"
@@ -221,6 +238,9 @@ guiTypes = {
 			buttonText = "decision_ksm_buttom"
 			buttonFont = "VCR02_14"
 			clicksound = click_close
+			enable = {
+
+			}
 		}
 		instantTextBoxType = {
 			name = "introduce_ksm_text"
@@ -228,7 +248,7 @@ guiTypes = {
 			font = "VCR02_14"
 			position = {
 				x = 10
-				y = 200
+				y = 140
 			}
 			maxWidth = 350
 		}

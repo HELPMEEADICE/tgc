@@ -258,3 +258,42 @@ defined_text = {
 		localization_key = JAP_party_support_critical_desc
 	}
 }
+
+defined_text = {
+	name = ksm_title
+    text = {
+		trigger = {
+			has_country_flag = UNE_member
+		}
+		localization_key = ksm_title_4
+	}
+	text = {
+		trigger = {
+			has_country_flag = APFNO_member
+			OR = {
+				USN = {
+				has_cosmetic_tag = usrepublic
+				}
+				USN = {
+				has_cosmetic_tag = usakira
+				}
+			}
+		}
+		localization_key = ksm_title_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = APFNO_member
+		}
+		localization_key = ksm_title_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = BGD_shanyaodang_dangxuan
+		}
+		localization_key = ksm_title_1
+	}
+	text = {
+		localization_key = ""
+	}
+}

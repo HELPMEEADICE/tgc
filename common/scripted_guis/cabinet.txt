@@ -23,6 +23,13 @@ scripted_gui = {
 				else = {
 					clr_country_flag = open_president_main_window
 				}
+				if = {
+					limit = { NOT = { has_country_flag = c_var_update } }
+					set_variable = { popular_support = 79 }
+					set_variable = { party_support = 91 }
+					set_variable = { supernatural_attunement = 55 }
+					set_country_flag = c_var_update
+				}
 			}
 			prime_minister_icon_click = {
 				if = {
@@ -124,8 +131,23 @@ scripted_gui = {
 				set_country_flag = open_president_decision_window
 				clr_country_flag = open_president_introduce_window
 			}
+			Party_icon_president_click = {
+				if = {
+					limit = { has_country_flag = hidden_ksm_decisions }
+					clr_country_flag = hidden_ksm_decisions
+				}
+				else = {
+					set_country_flag = hidden_ksm_decisions
+				}
+			}
 		}
 		triggers = {
+			decision_ksm_buttom_click_enabled = {
+				has_country_flag = open_president_introduce_window
+			}
+			introduce_ksm_buttom_click_enabled = {
+				has_country_flag = open_president_decision_window
+			}
 			introduce_ksm_text_visible = {
 				has_country_flag = open_president_introduce_window
 			}

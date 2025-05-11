@@ -30,6 +30,7 @@ decisions_BGD_cabinet = {
 		}
 		visible = {
 			check_variable = { popular_support < 100 }
+			NOT = { has_country_flag = hidden_ksm_decisions }
 		}
 		available = {
 			check_variable = { popular_support < 100 }
@@ -63,6 +64,7 @@ decisions_BGD_cabinet = {
 		}
 		visible = {
 			check_variable = { popular_support < 100 }
+			NOT = { has_country_flag = hidden_ksm_decisions }
 		}
 		available = {
 			check_variable = { popular_support < 100 }
@@ -96,6 +98,7 @@ decisions_BGD_cabinet = {
 		}
 		visible = {
 			check_variable = { popular_support < 100 }
+			NOT = { has_country_flag = hidden_ksm_decisions }
 		}
 		available = {
 			check_variable = { popular_support < 100 }
@@ -129,6 +132,7 @@ decisions_BGD_cabinet = {
 		}
 		visible = {
 			check_variable = { party_support < 100 }
+			NOT = { has_country_flag = hidden_ksm_decisions }
 		}
 		available = {
 			check_variable = { party_support < 100 }
@@ -162,6 +166,7 @@ decisions_BGD_cabinet = {
 		}
 		visible = {
 			check_variable = { party_support < 100 }
+			NOT = { has_country_flag = hidden_ksm_decisions }
 		}
 		available = {
 			check_variable = { party_support < 100 }
@@ -195,6 +200,7 @@ decisions_BGD_cabinet = {
 		}
 		visible = {
 			check_variable = { party_support < 100 }
+			NOT = { has_country_flag = hidden_ksm_decisions }
 		}
 		available = {
 			check_variable = { party_support < 100 }
@@ -228,6 +234,7 @@ decisions_BGD_cabinet = {
 		}
 		visible = {
 			check_variable = { supernatural_attunement < 100 }
+			NOT = { has_country_flag = hidden_ksm_decisions }
 		}
 		available = {
 			check_variable = { supernatural_attunement < 100 }
