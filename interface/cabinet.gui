@@ -238,9 +238,6 @@ guiTypes = {
 			buttonText = "decision_ksm_buttom"
 			buttonFont = "VCR02_14"
 			clicksound = click_close
-			enable = {
-
-			}
 		}
 		instantTextBoxType = {
 			name = "introduce_ksm_text"
