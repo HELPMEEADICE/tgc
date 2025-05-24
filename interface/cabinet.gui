@@ -167,14 +167,18 @@ guiTypes = {
 		animation_time = 360
 		iconType = {
 			name = "background_president"
-			spriteType = "GFX_gui_BGD_cabinet_background"
+			spriteType = "GFX_gui_BGD_cabinet_background_ksm"
+		}
+		iconType = {
+			name = "background_president_1"
+			spriteType = "GFX_gui_BGD_cabinet_background_ksm_1"
 		}
 		buttonType = {
 			name = "close_buttom_president_window"
 			spriteType = GFX_closebutton
 			position = {
-				x = -35
-				y = 5
+				x = -45
+				y = 15
 			}
 			orientation = UPPER_RIGHT
 			pdx_tooltip = "CLOSE"
@@ -185,15 +189,15 @@ guiTypes = {
 			spriteType = "GFX_gui_ksm_large"
 			scale = 0.7
 			position = {
-				x = 300
-				y = 195
+				x = 325
+				y = 187
 			}
 		}
 		instantTextBoxType = {
 			name = "title_president"
 			font = "VCR02_36"
 			position = {
-				x = 10
+				x = 15
 				y = 10
 			}
 			text = president_text_gui
@@ -225,7 +229,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "introduce_ksm_buttom"
-			position = { x=220 y=100 }
+			position = { x=220 y=95 }
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "introduce_ksm_buttom"
 			buttonFont = "VCR02_14"
@@ -233,7 +237,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "decision_ksm_buttom"
-			position = { x=50 y=100 }
+			position = { x=50 y=95 }
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "decision_ksm_buttom"
 			buttonFont = "VCR02_14"
@@ -247,17 +251,17 @@ guiTypes = {
 				x = 10
 				y = 140
 			}
-			maxWidth = 350
+			maxWidth = 345
 		}
 		instantTextBoxType = {
 			name = "decisions_ksm_text"
 			text = "decision_about_ksm"
 			font = "VCR02_14"
 			position = {
-				x = 10
+				x = 15
 				y = 130
 			}
-			maxWidth = 350
+			maxWidth = 345
 		}
 		
 		instantTextBoxType = {
@@ -266,7 +270,7 @@ guiTypes = {
 			pdx_tooltip = "JAP_popular_support_desc_1"
 			font = "VCR02_26"
 			position = {
-				x = 115
+				x = 120
 				y = 267
 			}
 			maxHeight = 26
@@ -278,7 +282,7 @@ guiTypes = {
 			pdx_tooltip = "JAP_party_support_desc_1"
 			font = "VCR02_24"
 			position = {
-				x = 115
+				x = 120
 				y = 383
 			}
 			maxHeight = 26
@@ -290,7 +294,7 @@ guiTypes = {
 			pdx_tooltip = "JAP_supernatural_attunement_desc_1"
 			font = "VCR02_24"
 			position = {
-				x = 115
+				x = 120
 				y = 503
 			}
 			maxHeight = 26
@@ -322,7 +326,7 @@ guiTypes = {
 		animation_time = 360
 		iconType = {
 			name = "background_pm"
-			spriteType = "GFX_gui_BGD_cabinet_background"
+			spriteType = "GFX_gui_BGD_cabinet_background_ars"
 		}
 		buttonType = {
 			name = "close_buttom_pm_window"
@@ -340,8 +344,8 @@ guiTypes = {
 			spriteType = "GFX_gui_ars_large"
 			scale = 0.7
 			position = {
-				x = 300
-				y = 195
+				x = 325
+				y = 187
 			}
 		}
 		instantTextBoxType = {
@@ -385,7 +389,7 @@ guiTypes = {
 		animation_time = 360
 		iconType = {
 			name = "background_mf"
-			spriteType = "GFX_gui_BGD_cabinet_background"
+			spriteType = "GFX_gui_BGD_cabinet_background_saaya"
 		}
 		buttonType = {
 			name = "close_buttom_mf_window"
@@ -403,8 +407,8 @@ guiTypes = {
 			spriteType = "GFX_gui_saaya_large"
 			scale = 0.7
 			position = {
-				x = 300
-				y = 195
+				x = 325
+				y = 187
 			}
 		}
 		instantTextBoxType = {
@@ -449,7 +453,7 @@ guiTypes = {
 		animation_time = 360
 		iconType = {
 			name = "background_mn"
-			spriteType = "GFX_gui_BGD_cabinet_background"
+			spriteType = "GFX_gui_BGD_cabinet_background_rimi"
 		}
 		buttonType = {
 			name = "close_buttom_mn_window"
@@ -467,8 +471,8 @@ guiTypes = {
 			spriteType = "GFX_gui_rimi_large"
 			scale = 0.7
 			position = {
-				x = 300
-				y = 195
+				x = 325
+				y = 187
 			}
 		}
 		instantTextBoxType = {
@@ -511,7 +515,7 @@ guiTypes = {
 		animation_time = 360
 		iconType = {
 			name = "background_ns"
-			spriteType = "GFX_gui_BGD_cabinet_background"
+			spriteType = "GFX_gui_BGD_cabinet_background_otae"
 		}
 		buttonType = {
 			name = "close_buttom_ns_window"
@@ -529,8 +533,8 @@ guiTypes = {
 			spriteType = "GFX_gui_otae_large"
 			scale = 0.7
 			position = {
-				x = 300
-				y = 195
+				x = 325
+				y = 187
 			}
 		}
 		instantTextBoxType = {

@@ -47,9 +47,34 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_gui_BGD_cabinet_background"
-		texturefile = "gfx\interface\BGD\BGD_cabinet_background.png"
+		name = "GFX_gui_BGD_cabinet_background_ksm"
+		texturefile = "gfx\interface\BGD\BGD_cabinet_background_ksm.png"
 	}
+	spriteType = {
+		name = "GFX_gui_BGD_cabinet_background_ksm_1"
+		texturefile = "gfx\interface\BGD\BGD_cabinet_background_ksm_1.png"
+	}
+
+	spriteType = {
+		name = "GFX_gui_BGD_cabinet_background_ars"
+		texturefile = "gfx\interface\BGD\BGD_cabinet_background_ars.png"
+	}
+
+	spriteType = {
+		name = "GFX_gui_BGD_cabinet_background_saaya"
+		texturefile = "gfx\interface\BGD\BGD_cabinet_background_saaya.png"
+	}
+
+	spriteType = {
+		name = "GFX_gui_BGD_cabinet_background_otae"
+		texturefile = "gfx\interface\BGD\BGD_cabinet_background_otae.png"
+	}
+
+	spriteType = {
+		name = "GFX_gui_BGD_cabinet_background_rimi"
+		texturefile = "gfx\interface\BGD\BGD_cabinet_background_rimi.png"
+	}
+
 	spriteType = {
 		name = "GFX_gui_BGD_cabinet_ppp_party"
 		texturefile = "gfx\interface\BGD\ppp_party.png"

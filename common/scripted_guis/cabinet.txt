@@ -148,6 +148,14 @@ scripted_gui = {
 			introduce_ksm_buttom_click_enabled = {
 				has_country_flag = open_president_decision_window
 			}
+
+			background_president_visible = {
+				has_country_flag = open_president_introduce_window
+			}
+			background_president_1_visible = {
+				has_country_flag = open_president_decision_window
+			}
+			
 			introduce_ksm_text_visible = {
 				has_country_flag = open_president_introduce_window
 			}
